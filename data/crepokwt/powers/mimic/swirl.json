@@ -1,0 +1,6 @@
+{
+    "type": "sync:energy_swirl",
+    "texture_location": "creeperoverhaul:textures/entity/armor/creeper_armor.png",
+    "speed": 0.000000000000001,
+    "size": 1.1
+}

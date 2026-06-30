@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"crepokwt:ignore",
+		"crepokwt:undisguise",
+		"crepokwt:ocean/disguise"
+	],
+	"icon": {
+		"item": "minecraft:air",
+		"tag": "{CustomModelData:10000000}"
+	},
+	"order": 10,
+	"impact": 0,
+	"name": "Creeper Mimic",
+	"description": "But mimiqued",
+	"unchoosable": true
+}

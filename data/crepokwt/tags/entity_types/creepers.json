@@ -1,0 +1,9 @@
+{
+    "values": [
+        "creeper",
+        {
+            "id": "#crepokwt:creepers_overhaul",
+            "required": false
+        }
+    ]
+}

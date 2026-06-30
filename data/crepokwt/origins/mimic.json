@@ -1,0 +1,37 @@
+{
+	"powers": [
+		"crepokwt:ignore",
+		"crepokwt:mimic/swirl",
+		"crepokwt:mimic/size",
+		"crepokwt:mimic/health",
+		"crepokwt:mimic/float",
+		"crepokwt:mimic/jump",
+		"crepokwt:mimic/alpha",
+		"crepokwt:mimic/vision",
+		"crepokwt:mimic/nodmg",
+		"crepokwt:posess/creeper",
+		"crepokwt:posess/badlands",
+		"crepokwt:posess/bamboo",
+		"crepokwt:posess/beach",
+		"crepokwt:posess/cave",
+		"crepokwt:posess/dark_oak",
+		"crepokwt:posess/desert",
+		"crepokwt:posess/dripstone",
+		"crepokwt:posess/hills",
+		"crepokwt:posess/jungle",
+		"crepokwt:posess/mushroom",
+		"crepokwt:posess/ocean",
+		"crepokwt:posess/savannah",
+		"crepokwt:posess/snowy",
+		"crepokwt:posess/spruce",
+		"crepokwt:posess/swamp"
+	],
+	"icon": {
+		"item": "minecraft:air",
+		"tag": "{CustomModelData:10000000}"
+	},
+	"order": 10,
+	"impact": 0,
+	"name": "Creeper Mimic",
+	"description": "Description"
+}

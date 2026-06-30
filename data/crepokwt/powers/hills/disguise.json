@@ -1,0 +1,19 @@
+{
+    "type": "apoli:action_on_callback",
+    "entity_action_gained": {
+        "type": "sync:disguise_as",
+        "entity_type": "creeperoverhaul:hills_creeper"
+    },
+    "entity_action_lost": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "sync:remove_disguise"
+            },
+            {
+                "type": "apoli:execute_command",
+                "command": "summon creeperoverhaul:hills_creeper"
+            }
+        ]
+    }
+}

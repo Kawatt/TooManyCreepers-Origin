@@ -1,0 +1,5 @@
+{
+    "type": "apoli:modify_falling",
+    "velocity": 0.01,
+    "take_fall_damage": false
+}

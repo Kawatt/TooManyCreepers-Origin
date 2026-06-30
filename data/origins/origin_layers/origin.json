@@ -1,5 +1,39 @@
 {
     "origins": [
-        "namespace:origin"
+        "crepokwt:mimic",
+        "crepokwt:creeper",
+        "crepokwt:badlands",
+        "crepokwt:bamboo",
+        "crepokwt:beach",
+        "crepokwt:cave",
+        "crepokwt:dark_oak",
+        "crepokwt:desert",
+        "crepokwt:dripstone",
+        "crepokwt:hills",
+        "crepokwt:jungle",
+        "crepokwt:mushroom",
+        "crepokwt:ocean",
+        "crepokwt:savannah",
+        "crepokwt:snowy",
+        "crepokwt:spruce",
+        "crepokwt:swamp"
+    ],
+    "exclude_random": [
+        "crepokwt:creeper",
+        "crepokwt:badlands",
+        "crepokwt:bamboo",
+        "crepokwt:beach",
+        "crepokwt:cave",
+        "crepokwt:dark_oak",
+        "crepokwt:desert",
+        "crepokwt:dripstone",
+        "crepokwt:hills",
+        "crepokwt:jungle",
+        "crepokwt:mushroom",
+        "crepokwt:ocean",
+        "crepokwt:savannah",
+        "crepokwt:snowy",
+        "crepokwt:spruce",
+        "crepokwt:swamp"
     ]
 }
