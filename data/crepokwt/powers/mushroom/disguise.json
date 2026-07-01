@@ -1,4 +1,5 @@
 {
+    "hidden": true,
     "type": "apoli:action_on_callback",
     "entity_action_gained": {
         "type": "sync:disguise_as",
@@ -12,7 +13,11 @@
             },
             {
                 "type": "apoli:execute_command",
-                "command": "summon creeperoverhaul:mushroom_creeper"
+                "command": "summon creeperoverhaul:mushroom_creeper ~ ~ ~ {Tags:[\"crepokwt.mimiqued\"],PersistenceRequired:true}"
+            },
+            {
+                "type": "apoli:play_sound",
+                "sound": "minecraft:entity.creeper.death"
             }
         ]
     }

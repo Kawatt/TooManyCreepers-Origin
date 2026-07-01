@@ -1,0 +1,38 @@
+{
+    "name": "Boomdash",
+    "description": "You can propel yourself through water using explosions.",
+    "type": "origins:active_self",
+    "cooldown": 20,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+        "bar_index": 3
+    },
+    "entity_action": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "apoli:add_velocity",
+                "space": "local",
+                "client": false,
+                "z": 1
+            },
+            {
+                "type": "apoli:explode",
+                "create_fire": false,
+                "damage_self": false,
+                "destruction_type": "none",
+                "power": 1
+            },
+            {
+                "type": "apoli:execute_command",
+                "command": "particle minecraft:sonic_boom"
+            }
+        ]
+    },
+    "condition": {
+        "type": "apoli:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">",
+        "compare_to": 0
+    }
+}

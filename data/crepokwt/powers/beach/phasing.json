@@ -1,0 +1,20 @@
+{
+    "name": "Like Sand",
+    "description": "You can phase through sand like it's air",
+    "type": "apoli:phasing",
+    "phase_down_condition": {
+        "type": "apoli:and",
+        "conditions": [
+            {
+                "type": "apoli:on_block"
+            },
+            {
+                "type": "apoli:sneaking"
+            }
+        ]
+    },
+    "block_condition": {
+        "type": "apoli:in_tag",
+        "tag": "*:beach_phasing"
+    }
+}

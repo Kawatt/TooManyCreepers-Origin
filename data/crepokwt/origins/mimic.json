@@ -1,6 +1,10 @@
 {
 	"powers": [
 		"crepokwt:ignore",
+		"crepokwt:notrade",
+		"crepokwt:nomagic",
+		"crepokwt:nopotion",
+		"crepokwt:posess/creeper",
 		"crepokwt:mimic/swirl",
 		"crepokwt:mimic/size",
 		"crepokwt:mimic/health",
@@ -9,7 +13,7 @@
 		"crepokwt:mimic/alpha",
 		"crepokwt:mimic/vision",
 		"crepokwt:mimic/nodmg",
-		"crepokwt:posess/creeper",
+		"crepokwt:mimic/newsoul",
 		"crepokwt:posess/badlands",
 		"crepokwt:posess/bamboo",
 		"crepokwt:posess/beach",
@@ -27,8 +31,8 @@
 		"crepokwt:posess/swamp"
 	],
 	"icon": {
-		"item": "minecraft:air",
-		"tag": "{CustomModelData:10000000}"
+		"item": "minecraft:creeper_head",
+		"tag": "{CustomModelData:296710}"
 	},
 	"order": 10,
 	"impact": 0,

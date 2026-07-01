@@ -2,15 +2,21 @@
 	"powers": [
 		"crepokwt:ignore",
 		"crepokwt:undisguise",
-		"crepokwt:mushroom/disguise"
+		"crepokwt:disc",
+		"crepokwt:undeath",
+		"crepokwt:notrade",
+		"crepokwt:nomagic",
+		"crepokwt:nopotion",
+		"crepokwt:mushroom/disguise",
+		"origins:no_shield"
 	],
 	"icon": {
-		"item": "minecraft:air",
-		"tag": "{CustomModelData:10000000}"
+		"item": "minecraft:creeper_head",
+		"tag": "{CustomModelData:296721}"
 	},
 	"order": 10,
 	"impact": 0,
-	"name": "Creeper Mimic",
+	"name": "Mushroom Mimic",
 	"description": "But mimiqued",
 	"unchoosable": true
 }

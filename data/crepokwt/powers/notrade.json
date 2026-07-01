@@ -1,0 +1,11 @@
+{
+    "hidden": true,
+    "type": "apoli:prevent_entity_use",
+    "bientity_condition": {
+        "type": "apoli:target_condition",
+        "condition": {
+            "type": "apoli:in_tag",
+            "tag": "*:notrade"
+        }
+    }
+}

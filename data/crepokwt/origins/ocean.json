@@ -2,15 +2,31 @@
 	"powers": [
 		"crepokwt:ignore",
 		"crepokwt:undisguise",
-		"crepokwt:ocean/disguise"
+		"crepokwt:disc",
+		"crepokwt:undeath",
+		"crepokwt:notrade",
+		"crepokwt:nomagic",
+		"crepokwt:nopotion",
+		"crepokwt:ocean/disguise",
+		"crepokwt:ocean/size",
+		"origins:water_breathing",
+		"origins:aqua_affinity",
+		"crepokwt:ocean/water_vision",
+		"crepokwt:ocean/land_slowness",
+		"crepokwt:ocean/dash",
+		"origins:like_water",
+		"origins:aquatic",
+		"origins:conduit_power_on_land",
+		"origins:air_from_potions",
+		"origins:no_shield"
 	],
 	"icon": {
-		"item": "minecraft:air",
-		"tag": "{CustomModelData:10000000}"
+		"item": "minecraft:creeper_head",
+		"tag": "{CustomModelData:296722}"
 	},
 	"order": 10,
 	"impact": 0,
-	"name": "Creeper Mimic",
+	"name": "Ocean Mimic",
 	"description": "But mimiqued",
 	"unchoosable": true
 }

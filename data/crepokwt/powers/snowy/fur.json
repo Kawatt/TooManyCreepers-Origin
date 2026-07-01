@@ -1,0 +1,9 @@
+{
+    "name": "Protective Fur",
+    "description": "You're immune to freezing damage.",
+    "type": "apoli:invulnerability",
+    "damage_condition": {
+        "type": "apoli:name",
+        "name": "freeze"
+    }
+}

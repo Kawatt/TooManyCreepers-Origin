@@ -1,0 +1,13 @@
+{
+    "values": [
+        "#minecraft:pickaxes",
+        {
+            "id": "#c:pickaxes",
+            "required": false
+        },
+        {
+            "id": "#forge:pickaxes",
+            "required": false
+        }
+    ]
+}

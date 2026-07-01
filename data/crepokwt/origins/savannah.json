@@ -2,15 +2,21 @@
 	"powers": [
 		"crepokwt:ignore",
 		"crepokwt:undisguise",
-		"crepokwt:savannah/disguise"
+		"crepokwt:disc",
+		"crepokwt:undeath",
+		"crepokwt:nomagic",
+		"crepokwt:nopotion",
+		"crepokwt:savannah/disguise",
+		"crepokwt:savannah/size",
+		"origins:no_shield"
 	],
 	"icon": {
-		"item": "minecraft:air",
-		"tag": "{CustomModelData:10000000}"
+		"item": "minecraft:creeper_head",
+		"tag": "{CustomModelData:296723}"
 	},
 	"order": 10,
 	"impact": 0,
-	"name": "Creeper Mimic",
+	"name": "Savannah Mimic",
 	"description": "But mimiqued",
 	"unchoosable": true
 }

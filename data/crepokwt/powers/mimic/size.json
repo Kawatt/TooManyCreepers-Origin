@@ -21,6 +21,6 @@
         "type": "origins:execute_command",
         "command": "scale reset @s"
     },
-	"name": "Name",
-	"description": "Description"
+	"name": "Tiny",
+	"description": "You're just one block tall and have half the usual hearts."
 }

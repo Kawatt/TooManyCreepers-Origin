@@ -2,15 +2,22 @@
 	"powers": [
 		"crepokwt:ignore",
 		"crepokwt:undisguise",
-		"crepokwt:snowy/disguise"
+		"crepokwt:disc",
+		"crepokwt:undeath",
+		"crepokwt:notrade",
+		"crepokwt:nomagic",
+		"crepokwt:nopotion",
+		"crepokwt:snowy/disguise",
+		"crepokwt:snowy/fur",
+		"origins:no_shield"
 	],
 	"icon": {
-		"item": "minecraft:air",
-		"tag": "{CustomModelData:10000000}"
+		"item": "minecraft:creeper_head",
+		"tag": "{CustomModelData:296724}"
 	},
 	"order": 10,
 	"impact": 0,
-	"name": "Creeper Mimic",
+	"name": "Snowy Mimic",
 	"description": "But mimiqued",
 	"unchoosable": true
 }

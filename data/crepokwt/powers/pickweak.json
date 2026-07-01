@@ -1,0 +1,21 @@
+{
+    "hidden": true,
+    "type": "apoli:modify_damage_taken",
+    "damage_condition": {
+        "type": "apoli:attacker",
+        "entity_condition": {
+            "type": "apoli:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "apoli:ingredient",
+                "ingredient": {
+                    "tag": "*:pickaxes"
+                }
+            }
+        }
+    },
+    "modifier": {
+        "operation": "multiply_total_multiplicative",
+        "value": 0.5
+    }
+}

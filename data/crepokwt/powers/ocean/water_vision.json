@@ -1,0 +1,15 @@
+{
+  "name": "Wet Eyes",
+  "description": "Your vision underwater is better than average.",
+  "type": "origins:toggle_night_vision",
+  "strength": 0.5,
+  "condition": {
+    "type": "origins:submerged_in",
+    "fluid": "minecraft:water"
+  },
+  "active_by_default": true,
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  }
+}

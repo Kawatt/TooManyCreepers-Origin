@@ -1,0 +1,8 @@
+{
+    "hidden": true,
+    "type": "apoli:prevent_block_use",
+    "block_condition": {
+        "type": "apoli:block",
+        "block": "minecraft:brewing_stand"
+    }
+}

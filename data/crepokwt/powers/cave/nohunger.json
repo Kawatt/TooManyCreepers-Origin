@@ -1,0 +1,6 @@
+{
+    "name": "Potent Digestion",
+    "description": "You're unaffected by the hunger effect.",
+    "type": "origins:effect_immunity",
+	"effect": "minecraft:hunger"
+}

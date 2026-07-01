@@ -1,4 +1,6 @@
 {
+    "name": "Light as a Leaf",
+    "description": "You are very light, fall slower and jump higher.",
     "type": "apoli:modify_falling",
     "velocity": 0.01,
     "take_fall_damage": false

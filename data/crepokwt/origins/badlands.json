@@ -2,11 +2,18 @@
 	"powers": [
 		"crepokwt:ignore",
 		"crepokwt:undisguise",
-		"crepokwt:badlands/disguise"
+		"crepokwt:disc",
+		"crepokwt:undeath",
+		"crepokwt:notrade",
+		"crepokwt:nomagic",
+		"crepokwt:nopotion",
+		"crepokwt:badlands/disguise",
+		"crepokwt:badlands/fireproof",
+		"origins:no_shield"
 	],
 	"icon": {
-		"item": "minecraft:air",
-		"tag": "{CustomModelData:10000000}"
+		"item": "minecraft:creeper_head",
+		"tag": "{CustomModelData:296711}"
 	},
 	"order": 10,
 	"impact": 0,

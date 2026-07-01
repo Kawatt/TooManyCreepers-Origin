@@ -1,0 +1,42 @@
+{
+    "hidden": true,
+    "type": "apoli:prevent_death",
+    "damage_condition": {
+        "type": "apoli:or",
+        "inverted": true,
+        "conditions": [
+            {
+                "type": "apoli:name",
+                "name": "outOfWorld"
+            },
+            {
+                "type": "apoli:attacker",
+                "entity_condition": {
+                    "type": "apoli:in_tag",
+                    "tag": "minecraft:skeletons"
+                }
+            }
+        ]
+    },
+    "entity_action": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "apoli:execute_command",
+                "command": "origin set @s origins:origin crepokwt:mimic"
+            },
+            {
+                "type": "apoli:heal",
+                "amount": 10
+            },
+            {
+                "type": "apoli:delay",
+                "ticks": 1,
+                "action": {
+                    "type": "apoli:execute_command",
+                    "command": "kill @e[tag=crepokwt.mimiqued,limit=1,sort=nearest,distance=..1]"
+                }
+            }
+        ]
+    }
+}

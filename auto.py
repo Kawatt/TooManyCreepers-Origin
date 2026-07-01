@@ -23,6 +23,7 @@ os.makedirs("jsons", exist_ok=True)
 
 for creeper in creepers:
     data = {
+        "hidden": true,
         "type": "apoli:action_on_entity_use",
         "bientity_action": {
             "type": "apoli:and",
@@ -60,6 +61,15 @@ for creeper in creepers:
                         "type": "apoli:and",
                         "actions": [
                             {
+                                "type": "apoli:passenger_action",
+                                "action": {
+                                    "type": "apoli:dismount"
+                                }
+                            },
+                            {
+                                "type": "apoli:dismount"
+                            },
+                            {
                                 "type": "apoli:execute_command",
                                 "command": "tp ~ -70 ~"
                             },
@@ -87,6 +97,13 @@ for creeper in creepers:
                         "inverted": True
                     }
                 ]
+            }
+        },
+        "condition": {
+            "type": "apoli:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "apoli:empty"
             }
         }
     }

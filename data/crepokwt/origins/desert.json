@@ -2,15 +2,21 @@
 	"powers": [
 		"crepokwt:ignore",
 		"crepokwt:undisguise",
-		"crepokwt:desert/disguise"
+		"crepokwt:disc",
+		"crepokwt:undeath",
+		"crepokwt:notrade",
+		"crepokwt:nomagic",
+		"crepokwt:nopotion",
+		"crepokwt:desert/disguise",
+		"origins:no_shield"
 	],
 	"icon": {
-		"item": "minecraft:air",
-		"tag": "{CustomModelData:10000000}"
+		"item": "minecraft:creeper_head",
+		"tag": "{CustomModelData:296717}"
 	},
 	"order": 10,
 	"impact": 0,
-	"name": "Creeper Mimic",
+	"name": "Desert Mimic",
 	"description": "But mimiqued",
 	"unchoosable": true
 }

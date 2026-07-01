@@ -1,0 +1,14 @@
+{
+    "name": "Shockwave",
+    "description": "When falling from a sufficiently high height, you explode.",
+    "type": "apoli:action_on_land",
+    "entity_action": {
+        "type": "apoli:explode",
+        "damage_self": false
+    },
+    "condition": {
+        "type": "apoli:fall_distance",
+        "comparison": ">",
+        "compare_to": 1
+    }
+}

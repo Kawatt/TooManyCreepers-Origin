@@ -1,4 +1,6 @@
 {
+    "name": "Creeper Mimicry",
+    "description": "Creepers see you as one of their own and do not attack you.",
     "type": "sync:mobs_ignore",
     "mob_condition": {
 		"type": "origins:in_tag",
