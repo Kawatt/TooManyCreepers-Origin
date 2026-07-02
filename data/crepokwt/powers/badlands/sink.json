@@ -1,0 +1,42 @@
+{
+    "name": "Heavy as a Rock",
+    "description": "You cannot stay afloat on any fluid.",
+    "type": "apoli:multiple",
+    "water": {
+        "type": "apoli:ignore_water"
+    },
+    "lava": {
+        "type": "apoli:action_over_time",
+        "interval": 4,
+        "entity_action": {
+            "type": "apoli:add_velocity",
+            "y": -0.1
+        },
+        "condition": {
+            "type": "apoli:and",
+            "conditions": [
+                {
+                    "type": "apoli:on_block",
+                    "inverted": true
+                },
+                {
+                    "type": "apoli:in_block",
+                    "block_condition": {
+                        "type": "apoli:offset",
+                        "y": -1,
+                        "condition": {
+                            "type": "apoli:movement_blocking",
+                            "inverted": true
+                        }
+                    }
+                },
+                {
+                    "type": "apoli:fluid_height",
+                    "fluid": "minecraft:lava",
+                    "comparison": "!=",
+                    "compare_to": 0
+                }
+            ]
+        }
+    }
+}

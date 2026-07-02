@@ -9,8 +9,9 @@
 		"crepokwt:nopotion",
 		"crepokwt:badlands/disguise",
 		"crepokwt:badlands/size",
+		"crepokwt:badlands/explode",
 		"crepokwt:badlands/fireproof",
-		"crepokwt:badlands/ignorewater",
+		"crepokwt:badlands/sink",
 		"origins:no_shield",
 		"crepokwt:catallergy"
 	],

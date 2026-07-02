@@ -16,6 +16,14 @@
                             "damage_type": "explosion",
                             "amount": 4
                         }
+                    },
+                    "bientity_condition": {
+                        "type": "apoli:target_condition",
+                        "condition": {
+                            "type": "origins:origin",
+                            "origin": "crepokwt:spruce"
+                        },
+                        "inverted": true
                     }
                 },
                 {

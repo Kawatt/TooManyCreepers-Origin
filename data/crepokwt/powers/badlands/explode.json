@@ -1,5 +1,5 @@
 {
-    "name": "Explosion",
+    "name": "Fiery Explosion",
     "description": "You can charge up an explosion, damaging nearby entitites.",
     "type": "apoli:multiple",
     "n": {
@@ -121,6 +121,17 @@
                                         }
                                     },
                                     {
+                                        "type": "apoli:area_of_effect",
+                                        "radius": 4,
+                                        "bientity_action": {
+                                            "type": "apoli:target_action",
+                                            "action": {
+                                                "type": "apoli:set_on_fire",
+                                                "duration": 2
+                                            }
+                                        }
+                                    },
+                                    {
                                         "type": "apoli:explode",
                                         "damage_self": false,
                                         "destruction_type": "none",
@@ -149,8 +160,20 @@
                                         }
                                     },
                                     {
+                                        "type": "apoli:area_of_effect",
+                                        "radius": 5,
+                                        "bientity_action": {
+                                            "type": "apoli:target_action",
+                                            "action": {
+                                                "type": "apoli:set_on_fire",
+                                                "duration": 4
+                                            }
+                                        }
+                                    },
+                                    {
                                         "type": "apoli:explode",
                                         "damage_self": false,
+                                        "create_fire": true,
                                         "destruction_type": "none",
                                         "power": 3
                                     }
@@ -221,41 +244,6 @@
                 "comparison": "!=",
                 "compare_to": 0
             }
-        }
-    },
-    "slow": {
-        "type": "apoli:modify_attribute",
-        "attribute": "minecraft:generic.movement_speed",
-        "modifier": {
-            "operation": "multiply_total_multiplicative",
-            "value": -0.8
-        },
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_charge",
-            "comparison": ">",
-            "compare_to": 1
-        }
-    },
-    "airslow": {
-        "type": "origins:attribute_modify_transfer",
-        "class": "modify_air_speed",
-        "attribute": "minecraft:generic.movement_speed",
-        "multiplier": 1,
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_charge",
-            "comparison": ">",
-            "compare_to": 1
-        }
-    },
-    "nosprint": {
-        "type": "origins:prevent_sprinting",
-        "condition": {
-            "type": "origins:resource",
-            "resource": "*:*_charge",
-            "comparison": ">",
-            "compare_to": 1
         }
     }
 }

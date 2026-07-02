@@ -105,7 +105,7 @@
             "bientity_condition": {
                 "type": "apoli:distance",
                 "comparison": ">",
-                "compare_to": 32
+                "compare_to": 8
             }
         }
     },
@@ -114,6 +114,13 @@
         "bientity_action": {
             "type": "apoli:and",
             "actions": [
+                {
+                    "type": "apoli:actor_action",
+                    "action": {
+                        "type": "apoli:trigger_cooldown",
+                        "power": "*:*_cool"
+                    }
+                },
                 {
                     "type": "apoli:actor_action",
                     "action": {
@@ -158,6 +165,19 @@
                     }
                 }
             ]
+        },
+        "condition": {
+            "type": "apoli:resource",
+            "resource": "*:*_cool",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "cool": {
+        "type": "apoli:cooldown",
+        "cooldown": 40,
+        "hud_render": {
+            "should_render": false
         }
     }
 }

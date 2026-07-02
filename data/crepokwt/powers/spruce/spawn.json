@@ -72,5 +72,18 @@
                 }
             ]
         }
+    },
+    "death": {
+        "type": "apoli:action_over_time",
+        "interval": 1,
+        "rising_action": {
+            "type": "origins:execute_command",
+            "command": "kill @e[type=armor_stand,limit=1,sort=nearest,tag=crepokwt.spawn]"
+        },
+        "condition": {
+            "type": "apoli:health",
+            "comparison": "==",
+            "compare_to": 0
+        }
     }
 }

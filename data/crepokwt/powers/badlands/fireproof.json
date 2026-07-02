@@ -1,5 +1,5 @@
 {
     "name": "Fire Proof",
-    "description": "You take no damage from fire sources",
+    "description": "You take no damage from fire sources.",
     "type": "apoli:fire_immunity"
 }
