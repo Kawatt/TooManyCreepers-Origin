@@ -1,0 +1,22 @@
+{
+    "name": "Steady Feet",
+    "description": "You don'tn recieve any fall damage, regardless of height. You're also immune to all dripstone damage.",
+    "type": "apoli:invulnerability",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "apoli:name",
+                "name": "fall"
+            },
+            {
+                "type": "apoli:name",
+                "name": "stalagmite"
+            },
+            {
+                "type": "apoli:name",
+                "name": "fallingStalactite"
+            }
+        ]
+    }
+}

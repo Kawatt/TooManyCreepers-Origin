@@ -9,7 +9,8 @@
 		"crepokwt:nopotion",
 		"crepokwt:bamboo/disguise",
 		"crepokwt:bamboo/climb",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

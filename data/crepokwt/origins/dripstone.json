@@ -9,10 +9,11 @@
 		"crepokwt:nopotion",
 		"crepokwt:dripstone/disguise",
 		"crepokwt:dripstone/shockwave",
+		"crepokwt:dripstone/nofall",
 		"crepokwt:fireres",
-		"origins:fall_immunity",
 		"crepokwt:pickweak",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

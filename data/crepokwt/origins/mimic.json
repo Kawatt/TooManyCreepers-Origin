@@ -28,7 +28,8 @@
 		"crepokwt:posess/savannah",
 		"crepokwt:posess/snowy",
 		"crepokwt:posess/spruce",
-		"crepokwt:posess/swamp"
+		"crepokwt:posess/swamp",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

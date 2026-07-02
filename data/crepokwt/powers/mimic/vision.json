@@ -3,11 +3,21 @@
     "description": "You can see creepers through walls when sneaking.",
     "type": "apoli:entity_glow",
     "bientity_condition": {
-        "type": "apoli:target_condition",
-        "condition": {
-            "type": "origins:in_tag",
-            "tag": "*:creepers"
-        }
+        "type": "apoli:and",
+        "conditions": [
+            {
+                "type": "apoli:target_condition",
+                "condition": {
+                    "type": "origins:in_tag",
+                    "tag": "*:creepers"
+                }
+            },
+            {
+                "type": "apoli:distance",
+                "comparison": "<",
+                "compare_to": 64
+            }
+        ]
     },
     "condition": {
         "type": "apoli:sneaking"

@@ -1,0 +1,10 @@
+{
+    "name": "Sand Speed",
+    "description": "You're slightly faster on sand.",
+    "type": "apoli:modify_attribute",
+    "attribute": "minecraft:generic.attack_damage",
+    "modifier": {
+        "operation": "multiply_total_multiplicative",
+        "value": 0.1
+    }
+}

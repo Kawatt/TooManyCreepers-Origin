@@ -1,0 +1,40 @@
+{
+    "name": "Cat Allergy",
+    "description": "You cannot stand being around cats.",
+    "type": "apoli:stacking_status_effect",
+    "min_stacks": -20,
+    "max_stacks": 40,
+    "duration_per_stack": 10,
+    "effect": {
+        "effect": "minecraft:blindness",
+        "show_particles": false,
+        "is_ambient": true
+    },
+    "condition": {
+        "type": "sync:entity_in_radius",
+        "bientity_condition": {
+            "type": "apoli:target_condition",
+            "condition": {
+                "type": "apoli:or",
+                "conditions": [
+                    {
+                        "type": "apoli:entity_type",
+                        "entity_type": "minecraft:cat"
+                    },
+                    {
+                        "type": "apoli:entity_type",
+                        "entity_type": "minecraft:ocelot"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "origin": "origins:feline"
+                    }
+                ]
+            }
+        },
+        "shape": "sphere",
+        "radius": 8.0,
+        "comparison": ">",
+        "compare_to": 0
+    }
+}

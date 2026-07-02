@@ -1,0 +1,76 @@
+{
+    "type": "apoli:multiple",
+    "callback": {
+        "type": "apoli:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:height 0.5 @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:width 0.5 @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:health 0.5 @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale set pehkui:explosions 0 @s"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "scale persist set true @s"
+                },
+                {
+                    "type": "apoli:spawn_entity",
+                    "entity_type": "minecraft:armor_stand",
+                    "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],Marker:true,Invisible:1b}",
+                    "entity_action": {
+                        "type": "apoli:grant_power",
+                        "power": "*:spruce/stand",
+                        "source": "*:*"
+                    }
+                },
+                {
+                    "type": "apoli:selector_action",
+                    "selector": "@e[tag=crepokwt.spawnaux,type=minecraft:armor_stand]",
+                    "bientity_action": {
+                        "type": "apoli:and",
+                        "actions": [
+                            {
+                                "type": "apoli:invert",
+                                "action": {
+                                    "type": "apoli:delay",
+                                    "ticks": 1,
+                                    "action": {
+                                        "type": "apoli:add_to_entity_set",
+                                        "set": "*:spruce/stand_set"
+                                    }
+                                }
+                            },
+                            {
+                                "type": "apoli:target_action",
+                                "action": {
+                                    "type": "apoli:grant_power",
+                                    "power": "*:spruce/stand",
+                                    "source": "*:*"
+                                }
+                            },
+                            {
+                                "type": "apoli:target_action",
+                                "action": {
+                                    "type": "apoli:execute_command",
+                                    "command": "tag @s remove crepokwt.spawnaux"
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+}

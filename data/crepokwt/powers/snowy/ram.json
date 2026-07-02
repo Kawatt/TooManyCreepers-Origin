@@ -1,0 +1,27 @@
+{
+	"name": "Ram",
+	"description": "Use explosions to prople yourself forwards.",
+    "type": "origins:active_self",
+	"cooldown": 100,
+    "hud_render": {
+        "should_render": true
+    },
+    "entity_action": {
+		"type": "apoli:and",
+		"actions": [
+			{
+				"type": "apoli:explode",
+				"damage_self": false,
+				"destruction_type": "none",
+				"power": 2
+			},
+			{
+				"type": "apoli:add_velocity",
+				"space": "local_horizontal",
+				"client": false,
+				"y": 0.1,
+				"z": 1
+			}
+		]
+    }
+}

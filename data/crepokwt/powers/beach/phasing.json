@@ -1,6 +1,6 @@
 {
     "name": "Like Sand",
-    "description": "You can phase through sand like it's air",
+    "description": "You can phase through sand like it's air.",
     "type": "apoli:phasing",
     "phase_down_condition": {
         "type": "apoli:and",

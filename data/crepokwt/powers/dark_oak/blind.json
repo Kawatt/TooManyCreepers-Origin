@@ -1,0 +1,10 @@
+{
+    "name": "Near Sighted",
+    "description": "You cannot see creatures that are far away.",
+    "type": "apoli:prevent_entity_render",
+    "bientity_condition": {
+        "type": "apoli:distance",
+        "comparison": ">",
+        "compare_to": 16
+    }
+}

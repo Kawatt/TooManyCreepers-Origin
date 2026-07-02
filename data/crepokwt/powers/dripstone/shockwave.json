@@ -4,11 +4,13 @@
     "type": "apoli:action_on_land",
     "entity_action": {
         "type": "apoli:explode",
-        "damage_self": false
+        "damage_self": false,
+        "destruction_type": "none",
+        "power": 1
     },
     "condition": {
         "type": "apoli:fall_distance",
         "comparison": ">",
-        "compare_to": 1
+        "compare_to": 2
     }
 }

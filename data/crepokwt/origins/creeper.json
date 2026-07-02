@@ -8,8 +8,10 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:creeper/disguise",
+		"crepokwt:creeper/size",
 		"crepokwt:explode",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

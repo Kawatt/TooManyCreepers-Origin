@@ -6,9 +6,11 @@
 		"crepokwt:undeath",
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
+		"crepokwt:yestrade",
 		"crepokwt:savannah/disguise",
 		"crepokwt:savannah/size",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

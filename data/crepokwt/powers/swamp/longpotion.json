@@ -1,6 +1,6 @@
 {
     "name": "Redstone Blood",
-    "description": "All potion effects last twice as long",
+    "description": "All potion effects last twice as long.",
     "type": "apoli:modify_status_effect_duration",
     "modifier": {
         "operation": "multiply_total_multiplicative",

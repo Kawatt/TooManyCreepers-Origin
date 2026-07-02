@@ -1,6 +1,6 @@
 {
     "name": "Possesion",
-    "description": "Right click a creeper to control it.",
+    "description": "Right click a creeper to control it, becoming stronger as a result.",
     "type": "apoli:action_on_entity_use",
     "bientity_action": {
         "type": "apoli:and",

@@ -1,7 +1,13 @@
 {
     "type": "apoli:active_self",
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true
+    },
     "entity_action": {
         "type": "apoli:explode",
-        "power": 1
+        "damage_self": false,
+        "destruction_type": "none",
+        "power": 2
     }
 }

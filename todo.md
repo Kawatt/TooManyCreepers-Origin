@@ -1,18 +1,22 @@
 Spirit forme
-small, translucent, being on fire explodes you, half health, debuff near cats, pacific against creepers
+being on fire explodes you, break blocks slower, debuff after death while disguised
 tiny cactus
+improve desc so that its obvious you loses debuffs when disguised
+debuff when changing creepers, blindness and nausea
 
 
 [ ] avoid tag/power errors when overhaul not installed
 
-badlands -> fire resistant
-cave -> extra prot
-bamboo -> climbing
-
 when hit by lighting
 
-dark oak -> enchanting table
-swamp -> potion
+
 cave -> slowness
-beach -> sand phasing
 ??? -> explosion resistance
+desert -> no venom, less exhaustion, sand speed
+badlands -> sink in water
+??? -> night vision
+??? -> faster when sneaking
+bamboo -> higher reach
+swamp -> explosion deals current effects
+
+make sure small ones cannot be posessed

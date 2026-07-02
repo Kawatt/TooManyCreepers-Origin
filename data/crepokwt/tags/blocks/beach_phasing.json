@@ -1,5 +1,9 @@
 {
     "values": [
+        "snow",
+        "gravel",
+        "snow_block",
+        "powder_snow",
         "sand",
         "red_sand",
         "dirt",
@@ -10,6 +14,7 @@
         "podzol",
         "mycelium",
         "mud",
+        "clay",
         "#dirt",
         "#sand",
         "white_concrete_powder",

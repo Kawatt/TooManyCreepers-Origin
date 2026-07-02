@@ -1,0 +1,45 @@
+{
+	"hidden": true,
+    "type": "origins:action_over_time",
+	"interval": 1,
+	"entity_action": {
+		"type": "apoli:block_action_at",
+		"block_action": {
+			"type": "apoli:set_block",
+			"block": "snow"
+		}
+	},
+	"condition": {
+		"type": "apoli:and",
+		"conditions": [
+			{
+				"type": "apoli:in_block",
+				"block_condition": {
+					"type": "apoli:offset",
+					"y": -1,
+					"condition": {
+						"type": "origins:and",
+						"conditions": [
+							{
+								"type": "apoli:in_tag",
+								"tag": "minecraft:snow_layer_cannot_survive_on",
+								"inverted": true
+							},
+							{
+								"type": "apoli:replacable",
+								"inverted": true
+							}
+						]
+					}
+				}
+			},
+			{
+				"type": "apoli:in_block",
+				"block_condition": {
+					"type": "apoli:block",
+					"block": "minecraft:air"
+				}
+			}
+		]
+	}
+}

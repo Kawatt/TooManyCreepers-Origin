@@ -10,10 +10,14 @@
 		"crepokwt:cave/disguise",
 		"crepokwt:cave/size",
 		"crepokwt:cave/nohunger",
+		"crepokwt:cave/heavy",
 		"crepokwt:fireres",
 		"origins:natural_armor",
+		"origins:strong_arms",
+		"origins:strong_arms_break_speed",
 		"crepokwt:pickweak",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

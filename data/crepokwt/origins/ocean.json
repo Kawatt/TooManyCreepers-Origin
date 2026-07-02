@@ -18,7 +18,8 @@
 		"origins:aquatic",
 		"origins:conduit_power_on_land",
 		"origins:air_from_potions",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

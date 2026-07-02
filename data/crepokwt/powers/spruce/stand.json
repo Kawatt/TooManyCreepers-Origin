@@ -1,0 +1,75 @@
+{
+    "type": "apoli:multiple",
+    "explode": {
+        "type": "apoli:action_over_time",
+        "interval": 2,
+        "rising_action": {
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "apoli:area_of_effect",
+                    "radius": 4,
+                    "bientity_action": {
+                        "type": "apoli:target_action",
+                        "action": {
+                            "type": "apoli:damage",
+                            "damage_type": "explosion",
+                            "amount": 4
+                        }
+                    }
+                },
+                {
+                    "type": "apoli:execute_command",
+                    "command": "tp ~ -70 ~"
+                },
+                {
+                    "type": "apoli:execute_command",
+                    "command": "kill @s"
+                }
+            ]
+        },
+        "condition": {
+            "type": "apoli:entity_set_size",
+            "set": "*:*_set",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "set": {
+        "type": "apoli:entity_set"
+    },
+    "tp": {
+        "type": "apoli:action_over_time",
+        "interval": 1,
+        "entity_action": {
+            "type": "apoli:action_on_entity_set",
+            "set": "*:*_set",
+            "bientity_action": {
+                "type": "apoli:and",
+                "actions": [
+                    {
+                        "type": "apoli:target_action",
+                        "action": {
+                            "type": "apoli:execute_command",
+                            "command": "tag @s add crepokwt.spawntp"
+                        }
+                    },
+                    {
+                        "type": "apoli:actor_action",
+                        "action": {
+                            "type": "apoli:execute_command",
+                            "command": "tp @s @e[tag=crepokwt.spawntp,limit=1,sort=nearest]"
+                        }
+                    },
+                    {
+                        "type": "apoli:target_action",
+                        "action": {
+                            "type": "apoli:execute_command",
+                            "command": "tag @s remove crepokwt.spawntp"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -6,10 +6,12 @@
 		"crepokwt:undeath",
 		"crepokwt:notrade",
 		"crepokwt:nomagic",
+		"crepokwt:yespotion",
 		"crepokwt:swamp/disguise",
 		"crepokwt:swamp/size",
 		"crepokwt:swamp/longpotion",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

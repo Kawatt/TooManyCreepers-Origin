@@ -11,7 +11,8 @@
 		"crepokwt:beach/size",
 		"crepokwt:beach/phasing",
 		"origins:fall_immunity",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

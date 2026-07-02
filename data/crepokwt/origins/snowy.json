@@ -8,8 +8,12 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:snowy/disguise",
+		"crepokwt:snowy/size",
+		"crepokwt:snowy/snow",
+		"crepokwt:snowy/ram",
 		"crepokwt:snowy/fur",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

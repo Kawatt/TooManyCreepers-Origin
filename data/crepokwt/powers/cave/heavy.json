@@ -1,0 +1,5 @@
+{
+    "name": "Heavy",
+    "description": "You're unable to sprint.",
+    "type": "apoli:prevent_sprinting"
+}

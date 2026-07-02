@@ -8,9 +8,12 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:jungle/disguise",
+		"crepokwt:jungle/size",
+		"crepokwt:jungle/fertilize",
 		"origins:sprint_jump",
 		"origins:fall_immunity",
-		"origins:no_shield"
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

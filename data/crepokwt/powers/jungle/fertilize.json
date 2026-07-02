@@ -1,0 +1,47 @@
+{
+    "name": "Fertilizer",
+    "description": "Grow plants at the cost of some food.",
+    "type": "apoli:active_self",
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true
+    },
+    "entity_action": {
+        "type": "apoli:and",
+        "actions": [
+            {
+                "type": "apoli:explode",
+                "damage_self": false,
+                "destruction_type": "none",
+                "power": 2
+            },
+            {
+                "type": "apoli:if_else",
+                "condition": {
+                    "type": "apoli:in_block",
+                    "block_condition": {
+                        "type": "apoli:block",
+                        "block": "minecraft:air",
+                        "inverted": true
+                    }
+                },
+                "if_action": {
+                    "type": "apoli:block_action_at",
+                    "block_action": {
+                        "type": "apoli:bonemeal"
+                    }
+                },
+                "else_action": {
+                    "type": "apoli:block_action_at",
+                    "block_action": {
+                        "type": "apoli:offset",
+                        "y": -1,
+                        "action": {
+                            "type": "apoli:bonemeal"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

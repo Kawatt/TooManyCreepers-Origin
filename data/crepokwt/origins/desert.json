@@ -8,7 +8,10 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:desert/disguise",
-		"origins:no_shield"
+		"crepokwt:desert/size",
+		"crepokwt:desert/sandspeed",
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

@@ -1,0 +1,8 @@
+{
+    "hidden": true,
+    "type": "apoli:effect_immunity",
+    "effects": [
+        "minecraft:darkness",
+        "minecraft:blindness"
+    ]
+}

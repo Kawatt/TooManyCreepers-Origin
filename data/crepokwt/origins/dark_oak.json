@@ -8,7 +8,12 @@
 		"crepokwt:nopotion",
 		"crepokwt:yesmagic",
 		"crepokwt:dark_oak/disguise",
-		"origins:no_shield"
+		"crepokwt:dark_oak/size",
+		"crepokwt:dark_oak/explode",
+		"crepokwt:dark_oak/noblind",
+		"crepokwt:dark_oak/blind",
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

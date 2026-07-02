@@ -8,8 +8,11 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:badlands/disguise",
+		"crepokwt:badlands/size",
 		"crepokwt:badlands/fireproof",
-		"origins:no_shield"
+		"crepokwt:badlands/ignorewater",
+		"origins:no_shield",
+		"crepokwt:catallergy"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",
