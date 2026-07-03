@@ -9,14 +9,12 @@ debuff when changing creepers, blindness and nausea
 
 when hit by lighting
 
-
-cave -> slowness
 ??? -> explosion resistance
 desert -> no venom, less exhaustion, sand speed
-badlands -> sink in water
 ??? -> night vision
 ??? -> faster when sneaking
-bamboo -> higher reach
 swamp -> explosion deals current effects
 
 make sure small ones cannot be posessed
+
+chage disguise from gain to added

@@ -1,0 +1,11 @@
+{
+    "name": "Weak",
+    "description": "You have less protection.",
+    "type": "apoli:attribute",
+    "modifier": {
+        "name": "Natural Armor health debuff",
+        "attribute": "minecraft:generic.armor",
+        "value": -4.0,
+        "operation": "addition"
+    }
+}

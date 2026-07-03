@@ -1,5 +1,5 @@
 {
-    "name": "Fiery Explosion",
+    "name": "Sandy Explosion",
     "description": "You can charge up an explosion, damaging nearby entitites.",
     "type": "apoli:multiple",
     "n": {
@@ -122,12 +122,16 @@
                                     },
                                     {
                                         "type": "apoli:area_of_effect",
-                                        "radius": 4,
+                                        "radius": 3,
                                         "bientity_action": {
                                             "type": "apoli:target_action",
                                             "action": {
-                                                "type": "apoli:set_on_fire",
-                                                "duration": 2
+                                                "type": "apoli:apply_effect",
+                                                "effect": {
+                                                    "effect": "minecraft:slowness",
+                                                    "duration": 20,
+                                                    "is_ambient": true
+                                                }
                                             }
                                         }
                                     },
@@ -161,19 +165,22 @@
                                     },
                                     {
                                         "type": "apoli:area_of_effect",
-                                        "radius": 5,
+                                        "radius": 4,
                                         "bientity_action": {
                                             "type": "apoli:target_action",
                                             "action": {
-                                                "type": "apoli:set_on_fire",
-                                                "duration": 4
+                                                "type": "apoli:apply_effect",
+                                                "effect": {
+                                                    "effect": "minecraft:slowness",
+                                                    "duration": 40,
+                                                    "is_ambient": true
+                                                }
                                             }
                                         }
                                     },
                                     {
                                         "type": "apoli:explode",
                                         "damage_self": false,
-                                        "create_fire": true,
                                         "destruction_type": "none",
                                         "power": 3
                                     }

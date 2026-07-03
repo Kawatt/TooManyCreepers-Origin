@@ -8,7 +8,11 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:bamboo/disguise",
+		"crepokwt:bamboo/size",
 		"crepokwt:bamboo/climb",
+		"origins:extra_reach",
+		"origins:vegetarian",
+		"crepokwt:fireweak",
 		"origins:no_shield",
 		"crepokwt:catallergy"
 	],

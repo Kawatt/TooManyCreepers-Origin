@@ -9,7 +9,9 @@
 		"crepokwt:nopotion",
 		"crepokwt:beach/disguise",
 		"crepokwt:beach/size",
+		"crepokwt:beach/explode",
 		"crepokwt:beach/phasing",
+		"crepokwt:beach/weak",
 		"origins:fall_immunity",
 		"origins:no_shield",
 		"crepokwt:catallergy"

@@ -26,8 +26,8 @@
                         "entity_type": "minecraft:ocelot"
                     },
                     {
-                        "type": "origins:origin",
-                        "origin": "origins:feline"
+                        "type": "origins:power",
+                        "power": "origins:scare_creepers"
                     }
                 ]
             }
