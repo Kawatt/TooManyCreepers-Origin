@@ -3,10 +3,90 @@
     "description": "When falling from a sufficiently high height, you explode.",
     "type": "apoli:action_on_land",
     "entity_action": {
-        "type": "apoli:explode",
-        "damage_self": false,
-        "destruction_type": "none",
-        "power": 1
+        "type": "apoli:if_else_list",
+        "actions": [
+            {
+                "action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "apoli:area_of_effect",
+                            "radius": 2,
+                            "bientity_action": {
+                                "type": "apoli:damage",
+                                "damage_type": "generic",
+                                "amount": 0
+                            }
+                        },
+                        {
+                            "type": "apoli:explode",
+                            "damage_self": false,
+                            "destruction_type": "none",
+                            "power": 1
+                        }
+                    ]
+                },
+                "condition": {
+                    "type": "apoli:fall_distance",
+                    "comparison": "<",
+                    "compare_to": 6
+                }
+            },
+            {
+                "action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "apoli:area_of_effect",
+                            "radius": 4,
+                            "bientity_action": {
+                                "type": "apoli:damage",
+                                "damage_type": "generic",
+                                "amount": 0
+                            }
+                        },
+                        {
+                            "type": "apoli:explode",
+                            "damage_self": false,
+                            "destruction_type": "none",
+                            "power": 2
+                        }
+                    ]
+                },
+                "condition": {
+                    "type": "apoli:fall_distance",
+                    "comparison": "<",
+                    "compare_to": 16
+                }
+            },
+            {
+                "action": {
+                    "type": "apoli:and",
+                    "actions": [
+                        {
+                            "type": "apoli:area_of_effect",
+                            "radius": 5,
+                            "bientity_action": {
+                                "type": "apoli:damage",
+                                "damage_type": "generic",
+                                "amount": 0
+                            }
+                        },
+                        {
+                            "type": "apoli:explode",
+                            "damage_self": false,
+                            "destruction_type": "none",
+                            "power": 3
+                        }
+                    ]
+                },
+                "condition": {
+                    "type": "apoli:fall_distance",
+                    "comparison": ">=",
+                    "compare_to": 16
+                }
+            }
+        ]
     },
     "condition": {
         "type": "apoli:fall_distance",

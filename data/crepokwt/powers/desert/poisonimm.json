@@ -1,0 +1,6 @@
+{
+    "name": "Poison Resistance",
+    "description": "You cannot get poisoned.",
+    "type": "apoli:effect_immunity",
+    "effect": "minecraft:poison"
+}

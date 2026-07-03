@@ -8,6 +8,9 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:hills/disguise",
+		"crepokwt:hills/size",
+		"crepokwt:hills/explode",
+		"crepokwt:hills/explres",
 		"origins:no_shield",
 		"crepokwt:catallergy"
 	],

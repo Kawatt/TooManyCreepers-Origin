@@ -10,6 +10,7 @@
 		"crepokwt:cave/disguise",
 		"crepokwt:cave/size",
 		"crepokwt:cave/nohunger",
+		"crepokwt:explode",
 		"origins:natural_armor",
 		"origins:strong_arms",
 		"origins:strong_arms_break_speed",

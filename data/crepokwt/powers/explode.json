@@ -113,7 +113,7 @@
                                 "actions": [
                                     {
                                         "type": "apoli:area_of_effect",
-                                        "radius": 3,
+                                        "radius": 4,
                                         "bientity_action": {
                                             "type": "apoli:damage",
                                             "damage_type": "generic",
@@ -141,7 +141,7 @@
                                 "actions": [
                                     {
                                         "type": "apoli:area_of_effect",
-                                        "radius": 4,
+                                        "radius": 5,
                                         "bientity_action": {
                                             "type": "apoli:damage",
                                             "damage_type": "generic",

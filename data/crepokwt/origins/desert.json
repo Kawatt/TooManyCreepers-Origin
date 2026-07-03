@@ -9,7 +9,10 @@
 		"crepokwt:nopotion",
 		"crepokwt:desert/disguise",
 		"crepokwt:desert/size",
+		"crepokwt:explode",
 		"crepokwt:desert/sandspeed",
+		"crepokwt:desert/poisonimm",
+		"crepokwt:fireres",
 		"origins:water_vulnerability",
 		"origins:no_shield",
 		"crepokwt:catallergy"

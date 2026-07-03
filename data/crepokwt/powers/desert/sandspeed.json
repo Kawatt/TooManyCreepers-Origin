@@ -2,9 +2,16 @@
     "name": "Sand Speed",
     "description": "You're slightly faster on sand.",
     "type": "apoli:modify_attribute",
-    "attribute": "minecraft:generic.attack_damage",
+    "attribute": "minecraft:generic.movement_speed",
     "modifier": {
         "operation": "multiply_total_multiplicative",
-        "value": 0.1
+        "value": 0.2
+    },
+    "condition": {
+        "type": "apoli:on_block",
+        "block_condition": {
+            "type": "apoli:in_tag",
+            "tag": "*:desert_sand"
+        }
     }
 }

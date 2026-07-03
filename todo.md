@@ -18,3 +18,5 @@ swamp -> explosion deals current effects
 make sure small ones cannot be posessed
 
 chage disguise from gain to added
+
+dripstone -> needs debuff
