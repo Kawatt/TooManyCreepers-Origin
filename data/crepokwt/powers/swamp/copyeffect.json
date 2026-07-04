@@ -1,6 +1,6 @@
 {
-    "name": "Sandy Explosion",
-    "description": "You can charge up an explosion, damaging nearby entitites.",
+    "name": "Gunpowder Explosion",
+    "description": "Exploding copies your effects onto others.",
     "type": "apoli:multiple",
     "n": {
         "type": "origins:resource",
@@ -84,19 +84,12 @@
                                 "type": "apoli:and",
                                 "actions": [
                                     {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 2,
-                                        "bientity_action": {
-                                            "type": "apoli:damage",
-                                            "damage_type": "generic",
-                                            "amount": 0
-                                        }
+                                        "type": "apoli:execute_command",
+                                        "command": "function crepokwt:applyeffect"
                                     },
                                     {
-                                        "type": "apoli:explode",
-                                        "damage_self": false,
-                                        "destruction_type": "none",
-                                        "power": 1
+                                        "type": "apoli:play_sound",
+                                        "sound": "minecraft:entity.generic.explode"
                                     }
                                 ]
                             },
@@ -112,38 +105,12 @@
                                 "type": "apoli:and",
                                 "actions": [
                                     {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 4,
-                                        "bientity_action": {
-                                            "type": "apoli:damage",
-                                            "damage_type": "generic",
-                                            "amount": 0
-                                        }
-                                    },
-                                    {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 4,
-                                        "bientity_action": {
-                                            "type": "apoli:target_action",
-                                            "action": {
-                                                "type": "apoli:apply_effect",
-                                                "effect": {
-                                                    "effect": "minecraft:slowness",
-                                                    "duration": 20,
-                                                    "is_ambient": true
-                                                }
-                                            }
-                                        }
-                                    },
-                                    {
                                         "type": "apoli:execute_command",
-                                        "command": "particle dust 1 1 0.7 1 ~ ~ ~ 1.5 1.5 1.5 0.1 50"
+                                        "command": "function crepokwt:applyeffect2"
                                     },
                                     {
-                                        "type": "apoli:explode",
-                                        "damage_self": false,
-                                        "destruction_type": "none",
-                                        "power": 2
+                                        "type": "apoli:play_sound",
+                                        "sound": "minecraft:entity.generic.explode"
                                     }
                                 ]
                             },
@@ -159,38 +126,12 @@
                                 "type": "apoli:and",
                                 "actions": [
                                     {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 5,
-                                        "bientity_action": {
-                                            "type": "apoli:damage",
-                                            "damage_type": "generic",
-                                            "amount": 0
-                                        }
-                                    },
-                                    {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 5,
-                                        "bientity_action": {
-                                            "type": "apoli:target_action",
-                                            "action": {
-                                                "type": "apoli:apply_effect",
-                                                "effect": {
-                                                    "effect": "minecraft:slowness",
-                                                    "duration": 40,
-                                                    "is_ambient": true
-                                                }
-                                            }
-                                        }
-                                    },
-                                    {
                                         "type": "apoli:execute_command",
-                                        "command": "particle dust 1 1 0.7 1 ~ ~ ~ 2.5 2.5 2.5 0.1 50"
+                                        "command": "function crepokwt:applyeffect3"
                                     },
                                     {
-                                        "type": "apoli:explode",
-                                        "damage_self": false,
-                                        "destruction_type": "none",
-                                        "power": 3
+                                        "type": "apoli:play_sound",
+                                        "sound": "minecraft:entity.generic.explode"
                                     }
                                 ]
                             },

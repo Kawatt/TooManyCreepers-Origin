@@ -1,0 +1,2 @@
+summon minecraft:area_effect_cloud ~ ~ ~ {Duration:160,Radius:2,RadiusOnUse:-0.5,ReapplicationDelay:20}
+data modify entity @e[type=minecraft:area_effect_cloud,limit=1,sort=nearest] Effects set from entity @s ActiveEffects
