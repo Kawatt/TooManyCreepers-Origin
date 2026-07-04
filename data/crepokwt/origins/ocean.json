@@ -19,7 +19,8 @@
 		"origins:conduit_power_on_land",
 		"origins:air_from_potions",
 		"origins:no_shield",
-		"crepokwt:catallergy"
+		"crepokwt:catallergy",
+		"crepokwt:awman"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

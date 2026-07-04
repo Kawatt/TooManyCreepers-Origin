@@ -14,7 +14,8 @@
 		"crepokwt:fireres",
 		"crepokwt:pickweak",
 		"origins:no_shield",
-		"crepokwt:catallergy"
+		"crepokwt:catallergy",
+		"crepokwt:awman"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

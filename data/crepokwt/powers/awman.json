@@ -1,0 +1,33 @@
+{
+    "hidden": true,
+    "type": "apoli:action_over_time",
+    "entity_action": {
+        "type": "apoli:area_of_effect",
+        "radius": 8,
+        "bientity_action": {
+            "type": "apoli:chance",
+            "chance": 0.001,
+            "action": {
+                "type": "apoli:target_action",
+                "action": {
+                    "type": "apoli:execute_command",
+                    "command": "say Awwww man."
+                }
+            }
+        },
+        "bientity_condition": {
+            "type": "apoli:and",
+            "conditions": [
+                {
+                    "type": "apoli:target_condition",
+                    "condition": {
+                        "type": "apoli:living"
+                    }
+                },
+                {
+                    "type": "apoli:can_see"
+                }
+            ]
+        }
+    }
+}

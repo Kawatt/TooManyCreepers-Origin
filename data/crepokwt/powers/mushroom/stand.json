@@ -1,0 +1,62 @@
+{
+    "type": "apoli:multiple",
+    "aoe": {
+        "type": "apoli:action_over_time",
+        "interval": 4,
+        "entity_action": {
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "apoli:execute_command",
+                    "command": "particle dust 0.5 1 0.5 1 ~ ~ ~ 1 1 1 0.1 50"
+                },
+                {
+                    "type": "apoli:area_of_effect",
+                    "radius": 2,
+                    "bientity_action": {
+                        "type": "apoli:target_action",
+                        "action": {
+                            "type": "apoli:apply_effect",
+                            "effect": {
+                                "effect": "minecraft:poison",
+                                "duration": 100,
+                                "amplifier": 0
+                            }
+                        }
+                    },
+                    "bientity_condition": {
+                        "type": "apoli:target_condition",
+                        "condition": {
+                            "type": "origins:origin",
+                            "origin": "crepokwt:mushroom",
+                            "inverted": true
+                        }
+                    }
+                },
+                {
+                    "type": "apoli:change_resource",
+                    "resource": "*:*_res",
+                    "change": 1
+                }
+            ]
+        }
+    },
+    "res": {
+        "type": "apoli:resource",
+        "min": 0,
+        "max": 40,
+        "max_action": {
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "apoli:execute_command",
+                    "command": "tp ~ -70 ~"
+                },
+                {
+                    "type": "apoli:execute_command",
+                    "command": "kill @s"
+                }
+            ]
+        }
+    }
+}

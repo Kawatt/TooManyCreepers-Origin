@@ -8,8 +8,11 @@
 		"crepokwt:nomagic",
 		"crepokwt:nopotion",
 		"crepokwt:mushroom/disguise",
+		"crepokwt:mushroom/size",
+		"crepokwt:mushroom/explode",
 		"origins:no_shield",
-		"crepokwt:catallergy"
+		"crepokwt:catallergy",
+		"crepokwt:awman"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

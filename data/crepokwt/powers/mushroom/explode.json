@@ -1,6 +1,6 @@
 {
-    "name": "Blinding Explosion",
-    "description": "You can charge up an explosion, damaging nearby entitites.",
+    "name": "Poisonous Explosion",
+    "description": "You can charge up an explosion, creating a nouxious gas.",
     "type": "apoli:multiple",
     "n": {
         "type": "origins:resource",
@@ -112,34 +112,18 @@
                                 "type": "apoli:and",
                                 "actions": [
                                     {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 4,
-                                        "bientity_action": {
-                                            "type": "apoli:damage",
-                                            "damage_type": "generic",
-                                            "amount": 0
+                                        "type": "apoli:spawn_entity",
+                                        "entity_type": "minecraft:armor_stand",
+                                        "tag": "{Tags:[\"crepokwt.cloud\"],Marker:true,Invisible:1b}",
+                                        "entity_action": {
+                                            "type": "apoli:grant_power",
+                                            "power": "*:mushroom/stand",
+                                            "source": "*:*"
                                         }
                                     },
                                     {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 4,
-                                        "bientity_action": {
-                                            "type": "apoli:target_action",
-                                            "action": {
-                                                "type": "apoli:apply_effect",
-                                                "effect": {
-                                                    "effect": "minecraft:darkness",
-                                                    "duration": 60,
-                                                    "is_ambient": true
-                                                }
-                                            }
-                                        }
-                                    },
-                                    {
-                                        "type": "apoli:explode",
-                                        "damage_self": false,
-                                        "destruction_type": "none",
-                                        "power": 2
+                                        "type": "apoli:play_sound",
+                                        "sound": "minecraft:entity.generic.explode"
                                     }
                                 ]
                             },
@@ -155,34 +139,51 @@
                                 "type": "apoli:and",
                                 "actions": [
                                     {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 5,
-                                        "bientity_action": {
-                                            "type": "apoli:damage",
-                                            "damage_type": "generic",
-                                            "amount": 0
+                                        "type": "apoli:spawn_entity",
+                                        "entity_type": "minecraft:armor_stand",
+                                        "tag": "{Tags:[\"crepokwt.cloud\"],Marker:true,Invisible:1b}",
+                                        "entity_action": {
+                                            "type": "apoli:grant_power",
+                                            "power": "*:mushroom/stand2",
+                                            "source": "*:*"
                                         }
                                     },
                                     {
-                                        "type": "apoli:area_of_effect",
-                                        "radius": 5,
-                                        "bientity_action": {
-                                            "type": "apoli:target_action",
-                                            "action": {
-                                                "type": "apoli:apply_effect",
-                                                "effect": {
-                                                    "effect": "minecraft:darkness",
-                                                    "duration": 100,
-                                                    "is_ambient": true
+                                        "type": "apoli:block_action_at",
+                                        "block_action": {
+                                            "type": "apoli:area_of_effect",
+                                            "shape": "sphere",
+                                            "radius": 4,
+                                            "block_action": {
+                                                "type": "apoli:chance",
+                                                "chance": 0.4,
+                                                "action": {
+                                                    "type": "apoli:set_block",
+                                                    "block": "minecraft:mycelium"
                                                 }
+                                            },
+                                            "block_condition": {
+                                                "type": "apoli:and",
+                                                "conditions": [
+                                                    {
+                                                        "type": "apoli:in_tag",
+                                                        "tag": "minecraft:dirt"
+                                                    },
+                                                    {
+                                                        "type": "origins:offset",
+                                                        "y": 1,
+                                                        "condition": {
+                                                            "type": "apoli:movement_blocking",
+                                                            "inverted": true
+                                                        }
+                                                    }
+                                                ]
                                             }
                                         }
                                     },
                                     {
-                                        "type": "apoli:explode",
-                                        "damage_self": false,
-                                        "destruction_type": "none",
-                                        "power": 3
+                                        "type": "apoli:play_sound",
+                                        "sound": "minecraft:entity.generic.explode"
                                     }
                                 ]
                             },

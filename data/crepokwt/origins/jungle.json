@@ -14,7 +14,8 @@
 		"origins:fall_immunity",
 		"crepokwt:fireweak",
 		"origins:no_shield",
-		"crepokwt:catallergy"
+		"crepokwt:catallergy",
+		"crepokwt:awman"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

@@ -14,7 +14,8 @@
 		"crepokwt:dark_oak/blind",
 		"crepokwt:fireweak",
 		"origins:no_shield",
-		"crepokwt:catallergy"
+		"crepokwt:catallergy",
+		"crepokwt:awman"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",
