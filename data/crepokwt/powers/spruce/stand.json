@@ -20,8 +20,19 @@
                     "bientity_condition": {
                         "type": "apoli:target_condition",
                         "condition": {
-                            "type": "origins:origin",
-                            "origin": "crepokwt:spruce"
+                            "type": "apoli:or",
+                            "conditions": [
+                                {
+                                    "type": "origins:origin",
+                                    "origin": "crepokwt:spruce"
+                                },
+                                {
+                                    "type": "origins:command",
+                                    "command": "execute if entity @s[tag=crepokwt.spawn]",
+                                    "comparison": ">",
+                                    "compare_to": 0
+                                }
+                            ]
                         },
                         "inverted": true
                     }

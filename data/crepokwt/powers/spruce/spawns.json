@@ -287,6 +287,15 @@
                 }
             ]
         },
+        "bientity_condition": {
+            "type": "apoli:target_condition",
+            "condition": {
+                "type": "apoli:command",
+                "command": "execute if entity @s[tag=crepokwt.spawn]",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        },
         "condition": {
             "type": "apoli:resource",
             "resource": "*:*_cool",
@@ -361,6 +370,15 @@
                 }
             ]
         },
+        "bientity_condition": {
+            "type": "apoli:target_condition",
+            "condition": {
+                "type": "apoli:command",
+                "command": "execute if entity @s[tag=crepokwt.spawn]",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        },
         "condition": {
             "type": "apoli:resource",
             "resource": "*:*_cool",
@@ -370,7 +388,7 @@
     },
     "cool": {
         "type": "apoli:cooldown",
-        "cooldown": 40,
+        "cooldown": 20,
         "hud_render": {
             "should_render": false
         }

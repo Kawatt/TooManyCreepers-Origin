@@ -28,7 +28,7 @@
                 {
                     "type": "apoli:spawn_entity",
                     "entity_type": "minecraft:armor_stand",
-                    "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],Marker:true,Invisible:0b}",
+                    "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],Marker:true,Invisible:1b}",
                     "entity_action": {
                         "type": "apoli:grant_power",
                         "power": "*:spruce/stand",
@@ -153,6 +153,37 @@
             "type": "apoli:health",
             "comparison": "==",
             "compare_to": 0
+        }
+    },
+    "timer": {
+        "type": "apoli:resource",
+        "min": 0,
+        "max": 60,
+        "max_action": {
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "kill @e[type=armor_stand,limit=1,sort=nearest,tag=crepokwt.spawn]"
+                },
+                {
+                    "type": "apoli:execute_command",
+                    "command": "tp ~ -70 ~"
+                },
+                {
+                    "type": "apoli:execute_command",
+                    "command": "kill @s"
+                }
+            ]
+        }
+    },
+    "timera": {
+        "type": "apoli:action_over_time",
+        "interval": 20,
+        "entity_action": {
+            "type": "apoli:change_resource",
+            "resource": "*:*_timer",
+            "change": 1
         }
     }
 }

@@ -23,7 +23,7 @@ os.makedirs("jsons", exist_ok=True)
 
 for creeper in creepers:
     data = {
-        "hidden": true,
+        "hidden": True,
         "type": "apoli:action_on_entity_use",
         "bientity_action": {
             "type": "apoli:and",
@@ -95,6 +95,12 @@ for creeper in creepers:
                         "type": "apoli:nbt",
                         "nbt": "{NoAI:1b}",
                         "inverted": True
+                    },
+                    {
+                        "type": "apoli:command",
+                        "command": "execute if entity @s[tag=crepokwt.spawn]",
+                        "comparison": "==",
+                        "compare_to": 0
                     }
                 ]
             }

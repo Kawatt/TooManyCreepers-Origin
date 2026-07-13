@@ -71,6 +71,12 @@
                     "type": "apoli:nbt",
                     "nbt": "{NoAI:1b}",
                     "inverted": true
+                },
+                {
+                    "type": "apoli:command",
+                    "command": "execute if entity @s[tag=crepokwt.spawn]",
+                    "comparison": "==",
+                    "compare_to": 0
                 }
             ]
         }
