@@ -2,6 +2,13 @@
     "name": "Creeplings",
     "description": "Spawn small spruce creepers that target entities you hit.",
     "type": "apoli:multiple",
+    "callback": {
+        "type": "apoli:action_on_callback",
+        "entity_action_gained": {
+            "type": "apoli:execute_command",
+            "command": "execute as @s unless score @s crepokwt.owner = @s crepokwt.owner store result score @s crepokwt.owner run scoreboard players add .counter crepokwt.owner 1"
+        }
+    },
     "spawn": {
         "type": "apoli:active_self",
         "cooldown": 100,
@@ -13,14 +20,8 @@
             "type": "apoli:and",
             "actions": [
                 {
-                    "type": "apoli:spawn_entity",
-                    "entity_type": "creeperoverhaul:spruce_creeper",
-                    "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b}",
-                    "entity_action": {
-                        "type": "apoli:grant_power",
-                        "power": "*:spruce/spawn",
-                        "source": "*:*"
-                    }
+                    "type": "apoli:execute_command",
+                    "command": "tag @s add crepokwt.spawning"
                 },
                 {
                     "type": "apoli:chance",
@@ -28,11 +29,85 @@
                     "action": {
                         "type": "apoli:spawn_entity",
                         "entity_type": "creeperoverhaul:spruce_creeper",
-                        "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b}",
+                        "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b,PersistenceRequired:true}",
                         "entity_action": {
-                            "type": "apoli:grant_power",
-                            "power": "*:spruce/spawn",
-                            "source": "*:*"
+                            "type": "apoli:and",
+                            "actions": [
+                                {
+                                    "type": "apoli:grant_power",
+                                    "power": "*:spruce/spawn",
+                                    "source": "*:*"
+                                },
+                                {
+                                    "type": "apoli:execute_command",
+                                    "command": "scoreboard players operation @s crepokwt.owner = @a[limit=1,sort=nearest,tag=crepokwt.spawning] crepokwt.owner"
+                                }
+                            ]
+                        }
+                    },
+                    "fail_action": {
+                        "type": "apoli:spawn_entity",
+                        "entity_type": "creeperoverhaul:mushroom_creeper",
+                        "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b,PersistenceRequired:true}",
+                        "entity_action": {
+                            "type": "apoli:and",
+                            "actions": [
+                                {
+                                    "type": "apoli:grant_power",
+                                    "power": "*:spruce/spawn",
+                                    "source": "*:*"
+                                },
+                                {
+                                    "type": "apoli:execute_command",
+                                    "command": "scoreboard players operation @s crepokwt.owner = @a[limit=1,sort=nearest,tag=crepokwt.spawning] crepokwt.owner"
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "type": "apoli:chance",
+                    "chance": 0.9,
+                    "action": {
+                        "type": "apoli:chance",
+                        "chance": 0.9,
+                        "action": {
+                            "type": "apoli:spawn_entity",
+                            "entity_type": "creeperoverhaul:spruce_creeper",
+                            "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b,PersistenceRequired:true}",
+                            "entity_action": {
+                                "type": "apoli:and",
+                                "actions": [
+                                    {
+                                        "type": "apoli:grant_power",
+                                        "power": "*:spruce/spawn",
+                                        "source": "*:*"
+                                    },
+                                    {
+                                        "type": "apoli:execute_command",
+                                        "command": "scoreboard players operation @s crepokwt.owner = @a[limit=1,sort=nearest,tag=crepokwt.spawning] crepokwt.owner"
+                                    }
+                                ]
+                            }
+                        },
+                        "fail_action": {
+                            "type": "apoli:spawn_entity",
+                            "entity_type": "creeperoverhaul:mushroom_creeper",
+                            "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b,PersistenceRequired:true}",
+                            "entity_action": {
+                                "type": "apoli:and",
+                                "actions": [
+                                    {
+                                        "type": "apoli:grant_power",
+                                        "power": "*:spruce/spawn",
+                                        "source": "*:*"
+                                    },
+                                    {
+                                        "type": "apoli:execute_command",
+                                        "command": "scoreboard players operation @s crepokwt.owner = @a[limit=1,sort=nearest,tag=crepokwt.spawning] crepokwt.owner"
+                                    }
+                                ]
+                            }
                         }
                     }
                 },
@@ -40,13 +115,45 @@
                     "type": "apoli:chance",
                     "chance": 0.5,
                     "action": {
-                        "type": "apoli:spawn_entity",
-                        "entity_type": "creeperoverhaul:spruce_creeper",
-                        "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b}",
-                        "entity_action": {
-                            "type": "apoli:grant_power",
-                            "power": "*:spruce/spawn",
-                            "source": "*:*"
+                        "type": "apoli:chance",
+                        "chance": 0.9,
+                        "action": {
+                            "type": "apoli:spawn_entity",
+                            "entity_type": "creeperoverhaul:spruce_creeper",
+                            "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b,PersistenceRequired:true}",
+                            "entity_action": {
+                                "type": "apoli:and",
+                                "actions": [
+                                    {
+                                        "type": "apoli:grant_power",
+                                        "power": "*:spruce/spawn",
+                                        "source": "*:*"
+                                    },
+                                    {
+                                        "type": "apoli:execute_command",
+                                        "command": "scoreboard players operation @s crepokwt.owner = @a[limit=1,sort=nearest,tag=crepokwt.spawning] crepokwt.owner"
+                                    }
+                                ]
+                            }
+                        },
+                        "fail_action": {
+                            "type": "apoli:spawn_entity",
+                            "entity_type": "creeperoverhaul:mushroom_creeper",
+                            "tag": "{Tags:[\"crepokwt.spawn\",\"crepokwt.spawnaux\"],ExplosionRadius:0b,PersistenceRequired:true}",
+                            "entity_action": {
+                                "type": "apoli:and",
+                                "actions": [
+                                    {
+                                        "type": "apoli:grant_power",
+                                        "power": "*:spruce/spawn",
+                                        "source": "*:*"
+                                    },
+                                    {
+                                        "type": "apoli:execute_command",
+                                        "command": "scoreboard players operation @s crepokwt.owner = @a[limit=1,sort=nearest,tag=crepokwt.spawning] crepokwt.owner"
+                                    }
+                                ]
+                            }
                         }
                     }
                 },
@@ -55,8 +162,12 @@
                     "selector": "@e[tag=crepokwt.spawnaux]",
                     "bientity_action": {
                         "type": "apoli:add_to_entity_set",
-                        "set": "*:*_set"
+                        "set": "*:spruce/set"
                     }
+                },
+                {
+                    "type": "apoli:execute_command",
+                    "command": "tag @s remove crepokwt.spawning"
                 }
             ]
         }
@@ -75,7 +186,7 @@
         "type": "apoli:action_over_time",
         "entity_action": {
             "type": "apoli:action_on_entity_set",
-            "set": "*:*_set",
+            "set": "*:spruce/set",
             "bientity_action": {
                 "type": "apoli:and",
                 "actions": [
@@ -125,7 +236,7 @@
                     "type": "apoli:actor_action",
                     "action": {
                         "type": "apoli:action_on_entity_set",
-                        "set": "*:*_set",
+                        "set": "*:spruce/set",
                         "bientity_action": {
                             "type": "apoli:target_action",
                             "action": {
@@ -158,6 +269,90 @@
                                     "action": {
                                         "type": "apoli:execute_command",
                                         "command": "tag @s remove crepokwt.spawnatk"
+                                    }
+                                },
+                                {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:add_velocity",
+                                        "x": 0,
+                                        "y": 0,
+                                        "z": 0,
+                                        "set": true
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "condition": {
+            "type": "apoli:resource",
+            "resource": "*:*_cool",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "defend": {
+        "type": "apoli:modify_damage_taken",
+        "bientity_action": {
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "apoli:target_action",
+                    "action": {
+                        "type": "apoli:trigger_cooldown",
+                        "power": "*:*_cool"
+                    }
+                },
+                {
+                    "type": "apoli:target_action",
+                    "action": {
+                        "type": "apoli:action_on_entity_set",
+                        "set": "*:spruce/set",
+                        "bientity_action": {
+                            "type": "apoli:target_action",
+                            "action": {
+                                "type": "apoli:execute_command",
+                                "command": "tag @s add crepokwt.spawnatk"
+                            }
+                        },
+                        "bientity_condition": {
+                            "type": "apoli:distance",
+                            "comparison": "<",
+                            "compare_to": 16
+                        }
+                    }
+                },
+                {
+                    "type": "apoli:actor_action",
+                    "action": {
+                        "type": "apoli:selector_action",
+                        "selector": "@e[tag=crepokwt.spawnatk]",
+                        "bientity_action": {
+                            "type": "apoli:and",
+                            "actions": [
+                                {
+                                    "type": "apoli:damage",
+                                    "damage_type": "generic",
+                                    "amount": 0
+                                },
+                                {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:execute_command",
+                                        "command": "tag @s remove crepokwt.spawnatk"
+                                    }
+                                },
+                                {
+                                    "type": "apoli:target_action",
+                                    "action": {
+                                        "type": "apoli:add_velocity",
+                                        "x": 0,
+                                        "y": 0,
+                                        "z": 0,
+                                        "set": true
                                     }
                                 }
                             ]

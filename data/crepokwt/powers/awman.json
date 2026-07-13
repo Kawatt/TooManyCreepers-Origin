@@ -2,30 +2,50 @@
     "hidden": true,
     "type": "apoli:action_over_time",
     "entity_action": {
-        "type": "apoli:area_of_effect",
-        "radius": 8,
-        "bientity_action": {
-            "type": "apoli:chance",
-            "chance": 0.001,
-            "action": {
-                "type": "apoli:target_action",
-                "action": {
-                    "type": "apoli:execute_command",
-                    "command": "say Awwww man."
-                }
-            }
-        },
-        "bientity_condition": {
+        "type": "apoli:chance",
+        "chance": 0.005,
+        "action": {
             "type": "apoli:and",
-            "conditions": [
+            "actions": [
                 {
-                    "type": "apoli:target_condition",
-                    "condition": {
-                        "type": "apoli:living"
+                    "type": "apoli:area_of_effect",
+                    "radius": 8,
+                    "bientity_action": {
+                        "type": "apoli:target_action",
+                        "action": {
+                            "type": "apoli:execute_command",
+                            "command": "tag @s add crepokwt.aww"
+                        }
+                    },
+                    "bientity_condition": {
+                        "type": "apoli:and",
+                        "conditions": [
+                            {
+                                "type": "apoli:target_condition",
+                                "condition": {
+                                    "type": "apoli:living"
+                                }
+                            },
+                            {
+                                "type": "apoli:can_see"
+                            }
+                        ]
                     }
                 },
                 {
-                    "type": "apoli:can_see"
+                    "type": "apoli:selector_action",
+                    "selector": "@e[limit=1,sort=nearest,tag=crepokwt.aww]",
+                    "bientity_action": {
+                        "type": "apoli:target_action",
+                        "action": {
+                            "type": "apoli:execute_command",
+                            "command": "say Awwww man."
+                        }
+                    }
+                },
+                {
+                    "type": "apoli:execute_command",
+                    "command": "tag @e[tag=crepokwt.aww] remove crepokwt.aww"
                 }
             ]
         }

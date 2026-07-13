@@ -1,0 +1,10 @@
+{
+    "type": "apoli:entity_set",
+    "action_on_add": {
+        "type": "apoli:target_action",
+        "action": {
+            "type": "apoli:execute_command",
+            "command": "tag @s remove crepokwt.spawnaux"
+        }
+    }
+}

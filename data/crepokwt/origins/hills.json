@@ -13,7 +13,8 @@
 		"crepokwt:hills/explres",
 		"origins:no_shield",
 		"crepokwt:catallergy",
-		"crepokwt:awman"
+		"crepokwt:awman",
+		"crepokwt:spruce/set"
 	],
 	"icon": {
 		"item": "minecraft:creeper_head",

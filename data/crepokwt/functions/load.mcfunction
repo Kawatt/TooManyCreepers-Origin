@@ -1,0 +1,1 @@
+scoreboard objectives add crepokwt.owner dummy
