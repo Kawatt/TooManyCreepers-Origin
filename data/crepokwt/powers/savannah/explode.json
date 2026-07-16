@@ -1,6 +1,6 @@
 {
-    "name": "Explosion",
-    "description": "You can charge up an explosion, damaging nearby entitites.",
+    "name": "Bazooka",
+    "description": "You can charge up an explosive projectile.",
     "type": "apoli:multiple",
     "n": {
         "type": "origins:resource",

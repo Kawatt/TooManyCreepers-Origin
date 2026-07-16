@@ -1,9 +1,13 @@
 {
     "hidden": true,
     "type": "apoli:action_on_callback",
-    "entity_action_gained": {
-        "type": "sync:disguise_as",
-        "entity_type": "creeperoverhaul:jungle_creeper"
+    "entity_action_added": {
+        "type": "apoli:delay",
+        "ticks": 1,
+        "action": {
+            "type": "sync:disguise_as",
+            "entity_type": "creeperoverhaul:jungle_creeper"
+        }
     },
     "entity_action_lost": {
         "type": "apoli:and",
