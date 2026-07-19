@@ -12,7 +12,7 @@
 		"crepokwt:beach/explode",
 		"crepokwt:beach/phasing",
 		"crepokwt:beach/weak",
-		"origins:fall_immunity",
+		"origins:slow_falling",
 		"origins:no_shield",
 		"crepokwt:catallergy",
 		"crepokwt:awman",
@@ -25,6 +25,6 @@
 	"order": 10,
 	"impact": 0,
 	"name": "Beach Mimic",
-	"description": "But mimiqued",
+	"description": "Your body fragments and you feel yourself become lighter.",
 	"unchoosable": true
 }

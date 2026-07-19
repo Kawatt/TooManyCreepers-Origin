@@ -49,9 +49,31 @@
     "hold_or_release": {
         "type": "origins:action_over_time",
         "entity_action": {
-            "type": "origins:change_resource",
-            "resource": "*:*_res",
-            "change": 1
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:*_res",
+                    "change": 1
+                },
+                {
+                    "type": "apoli:if_else",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "*:*_res",
+                        "comparison": ">",
+                        "compare_to": 1
+                    },
+                    "if_action": {
+                        "type": "apoli:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:nausea",
+                            "show_icon": false,
+                            "is_ambient": true
+                        }
+                    }
+                }
+            ]
         },
         "interval": 1,
         "falling_action": {
@@ -73,6 +95,8 @@
         "max": 60,
         "hud_render": {
             "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 6,
             "condition": {
                 "type": "apoli:resource",
                 "resource": "*:*_res",
@@ -81,8 +105,21 @@
             }
         },
         "max_action": {
-            "type": "apoli:execute_command",
-            "command": "origin set @s origins:origin crepokwt:mimic"
+            "type": "apoli:and",
+            "actions": [
+                {
+                    "type": "apoli:execute_command",
+                    "command": "origin set @s origins:origin crepokwt:mimic"
+                },
+                {
+                    "type": "apoli:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:blindness",
+                        "show_icon": false,
+                        "is_ambient": true
+                    }
+                }
+            ]
         }
     }
 }

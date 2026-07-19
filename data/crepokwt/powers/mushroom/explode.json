@@ -1,6 +1,6 @@
 {
     "name": "Poisonous Explosion",
-    "description": "You can charge up an explosion, creating a nouxious gas.",
+    "description": "You can charge up an explosion, creating a noxious gas.",
     "type": "apoli:multiple",
     "n": {
         "type": "origins:resource",

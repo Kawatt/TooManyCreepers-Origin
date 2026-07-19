@@ -94,7 +94,7 @@
                                     },
                                     {
                                         "type": "apoli:add_velocity",
-                                        "y": 1,
+                                        "y": 0.8,
                                         "client": false
                                     },
                                     {
@@ -127,7 +127,7 @@
                                     },
                                     {
                                         "type": "apoli:add_velocity",
-                                        "y": 1.5,
+                                        "y": 1.2,
                                         "client": false
                                     },
                                     {
@@ -160,7 +160,7 @@
                                     },
                                     {
                                         "type": "apoli:add_velocity",
-                                        "y": 2,
+                                        "y": 1.5,
                                         "client": false
                                     },
                                     {

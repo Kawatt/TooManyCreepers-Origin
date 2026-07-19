@@ -11,7 +11,7 @@
     },
     "spawn": {
         "type": "apoli:active_self",
-        "cooldown": 100,
+        "cooldown": 200,
         "hud_render": {
             "should_render": true
         },

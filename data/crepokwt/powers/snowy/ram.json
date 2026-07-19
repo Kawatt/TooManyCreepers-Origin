@@ -1,6 +1,6 @@
 {
 	"name": "Ram",
-	"description": "Use explosions to prople yourself forwards.",
+	"description": "Use explosions to propel yourself forwards.",
     "type": "origins:active_self",
 	"cooldown": 100,
     "hud_render": {
