@@ -20,7 +20,7 @@
 		"tag": "{CustomModelData:296721}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Mushroom Mimic",
 	"description": "Your body grows mushrooms, you feel calmer, somehow.",
 	"unchoosable": true

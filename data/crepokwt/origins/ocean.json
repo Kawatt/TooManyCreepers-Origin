@@ -28,7 +28,7 @@
 		"tag": "{CustomModelData:296722}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Ocean Mimic",
 	"description": "You feel scales form around your body, your breathing adjusts underwater.",
 	"unchoosable": true

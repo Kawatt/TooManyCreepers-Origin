@@ -21,7 +21,7 @@
 		"tag": "{CustomModelData:296726}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Swamp Mimic",
 	"description": "Your body grows a hat, you understand the power of potions.",
 	"unchoosable": true

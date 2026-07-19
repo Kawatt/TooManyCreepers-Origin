@@ -20,7 +20,7 @@
 		"tag": "{CustomModelData:296725}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Spruce Mimic",
 	"description": "Your body grows podzol, you feel the need to propagate.",
 	"unchoosable": true

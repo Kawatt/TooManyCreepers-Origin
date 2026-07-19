@@ -24,7 +24,7 @@
 		"tag": "{CustomModelData:296717}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Desert Mimic",
 	"description": "Your body adapts to the sands, you feel one with the desert.",
 	"unchoosable": true

@@ -27,7 +27,7 @@
 		"tag": "{CustomModelData:296714}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Cave Mimic",
 	"description": "Your body becomes solid as a rock.",
 	"unchoosable": true

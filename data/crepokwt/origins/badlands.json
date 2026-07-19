@@ -22,7 +22,7 @@
 		"tag": "{CustomModelData:296711}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Badlands Mimic",
 	"description": "Your body hardens and becomes more resistant to fire.",
 	"unchoosable": true

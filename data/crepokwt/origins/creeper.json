@@ -20,7 +20,7 @@
 		"tag": "{CustomModelData:296715}"
 	},
 	"order": 10,
-	"impact": 0,
+	"impact": 2,
 	"name": "Creeper Mimic",
 	"description": "Your body becumes greener and you feel the need to explode.",
 	"unchoosable": true
